@@ -1,0 +1,258 @@
+Fold: 6
+
+Traditional:
+-----------
+(Traditional) Epoch 1: 
+ Training(acc: 0.48, precision: 0.6319, recall: 0.4791666666666667, f1: 0.419922913343966, loss: 1.1011) 
+ Validation(acc: 0.3558, precision: 0.3776, recall: 0.35482500849473325, f1: 0.2537591307616036, loss: 1.0962)
+
+(Traditional) Epoch 2: 
+ Training(acc: 0.36, precision: 0.3373, recall: 0.3590686274509804, f1: 0.3260454002389486, loss: 1.1008) 
+ Validation(acc: 0.362, precision: 0.3953, recall: 0.3614509004417261, f1: 0.31900213541787126, loss: 1.0837)
+
+(Traditional) Epoch 3: 
+ Training(acc: 0.38, precision: 0.3602, recall: 0.375, f1: 0.3386857707509881, loss: 1.0775) 
+ Validation(acc: 0.4049, precision: 0.4764, recall: 0.40525540831351226, f1: 0.3646423309344658, loss: 1.0793)
+
+(Traditional) Epoch 4: 
+ Training(acc: 0.64, precision: 0.6862, recall: 0.6372549019607843, f1: 0.6392592592592593, loss: 0.9626) 
+ Validation(acc: 0.4049, precision: 0.4958, recall: 0.4059633027522936, f1: 0.3430173916741081, loss: 1.0827)
+
+(Traditional) Epoch 5: 
+ Training(acc: 0.64, precision: 0.7341, recall: 0.636029411764706, f1: 0.6334541062801933, loss: 0.9497) 
+ Validation(acc: 0.3926, precision: 0.4724, recall: 0.3938158341828067, f1: 0.32946750197245905, loss: 1.0814)
+
+(Traditional) Epoch 6: 
+ Training(acc: 0.7, precision: 0.7841, recall: 0.6924019607843137, f1: 0.666051433493294, loss: 0.8829) 
+ Validation(acc: 0.4049, precision: 0.5128, recall: 0.4060765658624986, f1: 0.34679591095814805, loss: 1.0717)
+
+(Traditional) Epoch 7: 
+ Training(acc: 0.72, precision: 0.7873, recall: 0.7144607843137255, f1: 0.7060602490082872, loss: 0.8986) 
+ Validation(acc: 0.4294, precision: 0.5291, recall: 0.43031487144637, f1: 0.40176354932901953, loss: 1.0518)
+
+(Traditional) Epoch 8: 
+ Training(acc: 0.8, precision: 0.8239, recall: 0.7990196078431372, f1: 0.8031056587091069, loss: 0.7887) 
+ Validation(acc: 0.4785, precision: 0.5463, recall: 0.4790463246120738, f1: 0.4760224239952491, loss: 1.0292)
+
+(Traditional) Epoch 9: 
+ Training(acc: 0.78, precision: 0.7865, recall: 0.7769607843137255, f1: 0.775132275132275, loss: 0.7722) 
+ Validation(acc: 0.4663, precision: 0.5225, recall: 0.4666156982670744, f1: 0.46734451588159187, loss: 1.016)
+
+(Traditional) Epoch 10: 
+ Training(acc: 0.9, precision: 0.9041, recall: 0.8995098039215685, f1: 0.9000901875901876, loss: 0.7047) 
+ Validation(acc: 0.4939, precision: 0.5484, recall: 0.49416694982444215, f1: 0.4972567783094099, loss: 1.0029)
+
+-----------------------------------------------------------------
+
+NSSDL:
+-----------
+(NSSDL) Epoch 1: 
+ Training(acc: 0.5783, precision: 0.4368, recall: 0.47943822557635357, f1: 0.44146926773474837, loss: 2.3857) 
+ Validation(acc: 0.362, precision: 0.3805, recall: 0.5449371389738362, f1: 0.41293936929610553, loss: 1.1558)
+PL-Training(acc: 0.7967, precision: 0.6403, recall: 0.5912293923291777, f1: 0.6009173838831277, loss: 0.5066) 
+ Finetune-Training(acc: 0.36, precision: 0.2333, recall: 0.36764705882352944, f1: 0.28202115158636903, loss: 1.8791)
+
+(NSSDL) Epoch 2: 
+ Training(acc: 0.6881, precision: 0.6197, recall: 0.6677263163239883, f1: 0.6247173138100259, loss: 3.5305) 
+ Validation(acc: 0.3681, precision: 0.3762, recall: 0.5538141352361536, f1: 0.4320669212791427, loss: 2.494)
+PL-Training(acc: 0.9163, precision: 0.9047, recall: 0.8758938091185648, f1: 0.8888285670139912, loss: 0.2923) 
+ Finetune-Training(acc: 0.46, precision: 0.3348, recall: 0.45955882352941174, f1: 0.3606060606060606, loss: 3.2382)
+
+(NSSDL) Epoch 3: 
+ Training(acc: 0.7233, precision: 0.6442, recall: 0.7207998307236564, f1: 0.6709742158169795, loss: 3.5384) 
+ Validation(acc: 0.3804, precision: 0.3969, recall: 0.5723751274209989, f1: 0.4446190102120974, loss: 3.2753)
+PL-Training(acc: 0.9466, precision: 0.9407, recall: 0.9391486810551559, f1: 0.939928229613757, loss: 0.21) 
+ Finetune-Training(acc: 0.5, precision: 0.3476, recall: 0.5024509803921569, f1: 0.402020202020202, loss: 3.3284)
+
+(NSSDL) Epoch 4: 
+ Training(acc: 0.7372, precision: 0.6636, recall: 0.7358064635992863, f1: 0.6874227226588606, loss: 3.4633) 
+ Validation(acc: 0.3742, precision: 0.3977, recall: 0.5632857628270472, f1: 0.4330997465334725, loss: 4.5205)
+PL-Training(acc: 0.9745, precision: 0.9717, recall: 0.9691619468064157, f1: 0.9704336806118389, loss: 0.1078) 
+ Finetune-Training(acc: 0.5, precision: 0.3554, recall: 0.5024509803921569, f1: 0.4044117647058824, loss: 3.3555)
+
+(NSSDL) Epoch 5: 
+ Training(acc: 0.7624, precision: 0.682, recall: 0.7631972984821086, f1: 0.7076439060142308, loss: 3.0568) 
+ Validation(acc: 0.3804, precision: 0.4131, recall: 0.5725874957526333, f1: 0.4384790528233151, loss: 3.2392)
+PL-Training(acc: 0.9848, precision: 0.9799, recall: 0.9847279302975506, f1: 0.9822853306388835, loss: 0.0696) 
+ Finetune-Training(acc: 0.54, precision: 0.3841, recall: 0.5416666666666666, f1: 0.43300248138957814, loss: 2.9873)
+
+(NSSDL) Epoch 6: 
+ Training(acc: 0.7548, precision: 0.6943, recall: 0.7547280764460067, f1: 0.7075859946850925, loss: 3.4442) 
+ Validation(acc: 0.3773, precision: 0.3895, recall: 0.5675756031260619, f1: 0.445966709346991, loss: 4.3645)
+PL-Training(acc: 0.9896, precision: 0.9881, recall: 0.9873973293626015, f1: 0.9877560677013899, loss: 0.0553) 
+ Finetune-Training(acc: 0.52, precision: 0.4006, recall: 0.5220588235294118, f1: 0.4274159216687952, loss: 3.3889)
+
+(NSSDL) Epoch 7: 
+ Training(acc: 0.7672, precision: 0.6936, recall: 0.7684578607046961, f1: 0.7147614760099277, loss: 3.26) 
+ Validation(acc: 0.3896, precision: 0.4136, recall: 0.586221542643561, f1: 0.4566767407059652, loss: 4.3176)
+PL-Training(acc: 0.9944, precision: 0.9917, recall: 0.9952490547427256, f1: 0.9934642518102117, loss: 0.0352) 
+ Finetune-Training(acc: 0.54, precision: 0.3955, recall: 0.5416666666666666, f1: 0.4360587002096436, loss: 3.2248)
+
+(NSSDL) Epoch 8: 
+ Training(acc: 0.7688, precision: 0.6914, recall: 0.7702213537889264, f1: 0.7177539551569235, loss: 3.1089) 
+ Validation(acc: 0.3896, precision: 0.4023, recall: 0.5860091743119267, f1: 0.46115387893077286, loss: 4.7223)
+PL-Training(acc: 0.9976, precision: 0.9968, recall: 0.9975505507151077, f1: 0.9971909168497948, loss: 0.016) 
+ Finetune-Training(acc: 0.54, precision: 0.386, recall: 0.5428921568627451, f1: 0.4383169934640523, loss: 3.0929)
+
+(NSSDL) Epoch 9: 
+ Training(acc: 0.7448, precision: 0.6757, recall: 0.7440831145939665, f1: 0.6946025585074267, loss: 3.3834) 
+ Validation(acc: 0.3865, precision: 0.4, recall: 0.5814644920149508, f1: 0.4557700557700558, loss: 4.2306)
+PL-Training(acc: 0.9896, precision: 0.989, recall: 0.9869407389918545, f1: 0.9879472553796333, loss: 0.0561) 
+ Finetune-Training(acc: 0.5, precision: 0.3624, recall: 0.5012254901960784, f1: 0.4012578616352201, loss: 3.3273)
+
+(NSSDL) Epoch 10: 
+ Training(acc: 0.7764, precision: 0.8781, recall: 0.7763085535860356, f1: 0.7383437976208996, loss: 3.15) 
+ Validation(acc: 0.3773, precision: 0.3873, recall: 0.5674906557934081, f1: 0.44769998308811093, loss: 4.4594)
+PL-Training(acc: 0.9928, precision: 0.992, recall: 0.9913425973681496, f1: 0.9916787768996476, loss: 0.0315) 
+ Finetune-Training(acc: 0.56, precision: 0.7643, recall: 0.5612745098039216, f1: 0.48500881834215165, loss: 3.1185)
+
+-----------------------------------------------------------------
+-----------
+NSSDL_Strong:
+(NSSDL  Strong) Epoch 1: 
+ Training(acc: 0.9545, precision: 0.9488, recall: 0.945421859593349, f1: 0.9470586715175813, loss: 0.3076) 
+ Validation(acc: 0.4663, precision: 0.4947, recall: 0.4662759089364594, f1: 0.4625255393106376, loss: 3.6898)
+PL-Training(acc: 0.9091, precision: 0.8975, recall: 0.8908437191866981, f1: 0.8941173430351627, loss: 0.3073) 
+ Finetune-Training(acc: 1.0, precision: 1.0, recall: 1.0, f1: 1.0, loss: 0.0003)
+
+(NSSDL  Strong) Epoch 2: 
+ Training(acc: 0.9466, precision: 0.9456, recall: 0.9445681575075968, f1: 0.9450747225582921, loss: 0.3301) 
+ Validation(acc: 0.4663, precision: 0.4905, recall: 0.46621927738135693, f1: 0.4634543227242447, loss: 3.7328)
+PL-Training(acc: 0.8931, precision: 0.8913, recall: 0.8891363150151935, f1: 0.890149445116584, loss: 0.329) 
+ Finetune-Training(acc: 1.0, precision: 1.0, recall: 1.0, f1: 1.0, loss: 0.0011)
+
+(NSSDL  Strong) Epoch 3: 
+ Training(acc: 0.9609, precision: 0.9602, recall: 0.9604393268074856, f1: 0.9600207758205075, loss: 0.2061) 
+ Validation(acc: 0.4601, precision: 0.4807, recall: 0.4600181220976329, f1: 0.457397356727274, loss: 4.0078)
+PL-Training(acc: 0.9418, precision: 0.94, recall: 0.9404864967522258, f1: 0.9402435718430352, loss: 0.1871) 
+ Finetune-Training(acc: 0.98, precision: 0.9804, recall: 0.9803921568627452, f1: 0.9797979797979798, loss: 0.019)
+
+(NSSDL  Strong) Epoch 4: 
+ Training(acc: 0.9785, precision: 0.9753, recall: 0.9758998017736993, f1: 0.9755834339823519, loss: 0.1347) 
+ Validation(acc: 0.4877, precision: 0.5006, recall: 0.4877392683203081, f1: 0.48671294604798443, loss: 4.055)
+PL-Training(acc: 0.9569, precision: 0.9506, recall: 0.9517996035473987, f1: 0.9511668679647037, loss: 0.1344) 
+ Finetune-Training(acc: 1.0, precision: 1.0, recall: 1.0, f1: 1.0, loss: 0.0003)
+
+(NSSDL  Strong) Epoch 5: 
+ Training(acc: 0.9781, precision: 0.978, recall: 0.9762974925936518, f1: 0.9771256450041035, loss: 0.1539) 
+ Validation(acc: 0.4663, precision: 0.4893, recall: 0.46619096160380563, f1: 0.4638743508447236, loss: 4.4118)
+PL-Training(acc: 0.9561, precision: 0.9561, recall: 0.9525949851873037, f1: 0.954251290008207, loss: 0.1536) 
+ Finetune-Training(acc: 1.0, precision: 1.0, recall: 1.0, f1: 1.0, loss: 0.0002)
+
+(NSSDL  Strong) Epoch 6: 
+ Training(acc: 0.9884, precision: 0.9885, recall: 0.9880513117957466, f1: 0.9882668112719419, loss: 0.0794) 
+ Validation(acc: 0.4755, precision: 0.4973, recall: 0.47545022086306493, f1: 0.47285436697201405, loss: 4.5265)
+PL-Training(acc: 0.9769, precision: 0.977, recall: 0.976102623591493, f1: 0.976533622543884, loss: 0.0792) 
+ Finetune-Training(acc: 1.0, precision: 1.0, recall: 1.0, f1: 1.0, loss: 0.0002)
+
+(NSSDL  Strong) Epoch 7: 
+ Training(acc: 0.9924, precision: 0.993, recall: 0.9923452658232907, f1: 0.9926452961954797, loss: 0.0688) 
+ Validation(acc: 0.4724, precision: 0.4854, recall: 0.47227885377732476, f1: 0.4701709991565064, loss: 4.6708)
+PL-Training(acc: 0.9848, precision: 0.9859, recall: 0.9846905316465815, f1: 0.9852905923909594, loss: 0.0687) 
+ Finetune-Training(acc: 1.0, precision: 1.0, recall: 1.0, f1: 1.0, loss: 0.0001)
+
+(NSSDL  Strong) Epoch 8: 
+ Training(acc: 0.9952, precision: 0.9955, recall: 0.9950427288952444, f1: 0.9952710756233394, loss: 0.0416) 
+ Validation(acc: 0.4755, precision: 0.505, recall: 0.47550685241816737, f1: 0.47324311363221777, loss: 4.8025)
+PL-Training(acc: 0.9904, precision: 0.991, recall: 0.9900854577904886, f1: 0.9905421512466788, loss: 0.0414) 
+ Finetune-Training(acc: 1.0, precision: 1.0, recall: 1.0, f1: 1.0, loss: 0.0001)
+
+(NSSDL  Strong) Epoch 9: 
+ Training(acc: 0.9952, precision: 0.9944, recall: 0.9954128921812588, f1: 0.9948859471152296, loss: 0.0276) 
+ Validation(acc: 0.4724, precision: 0.5017, recall: 0.4723638011099785, f1: 0.4706564753076381, loss: 4.9453)
+PL-Training(acc: 0.9904, precision: 0.9887, recall: 0.9908257843625178, f1: 0.9897718942304593, loss: 0.0275) 
+ Finetune-Training(acc: 1.0, precision: 1.0, recall: 1.0, f1: 1.0, loss: 0.0001)
+
+(NSSDL  Strong) Epoch 10: 
+ Training(acc: 0.9964, precision: 0.9965, recall: 0.9967114704748123, f1: 0.9966203917587388, loss: 0.0387) 
+ Validation(acc: 0.4724, precision: 0.5035, recall: 0.4723638011099785, f1: 0.4698507300213632, loss: 5.0645)
+PL-Training(acc: 0.9928, precision: 0.9931, recall: 0.9934229409496247, f1: 0.9932407835174776, loss: 0.0386) 
+ Finetune-Training(acc: 1.0, precision: 1.0, recall: 1.0, f1: 1.0, loss: 0.0001)
+
+-----------------------------------------------------------------
+-----------
+MixText:
+(MixText) Epoch 1: 
+ Training(acc: 0.82, precision: 0.8139, recall: 0.8161764705882352, f1: 0.8113665389527459, loss: 0.868) 
+ Validation(acc: 0.4141, precision: 0.4281, recall: 0.4143164571299128, f1: 0.4091693678955996, loss: 1.0691)
+
+(MixText) Epoch 2: 
+ Training(acc: 0.9, precision: 0.9242, recall: 0.8958333333333334, f1: 0.8955365622032289, loss: 0.3579) 
+ Validation(acc: 0.408, precision: 0.4445, recall: 0.409162985615585, f1: 0.3514320408087457, loss: 1.1789)
+
+(MixText) Epoch 3: 
+ Training(acc: 1.0, precision: 1.0, recall: 1.0, f1: 1.0, loss: 0.134) 
+ Validation(acc: 0.4294, precision: 0.4544, recall: 0.42926718767697364, f1: 0.4029143260718869, loss: 1.2484)
+
+(MixText) Epoch 4: 
+ Training(acc: 1.0, precision: 1.0, recall: 1.0, f1: 1.0, loss: 0.0941) 
+ Validation(acc: 0.4571, precision: 0.5133, recall: 0.4560255974629064, f1: 0.41111266099409494, loss: 1.416)
+
+(MixText) Epoch 5: 
+ Training(acc: 1.0, precision: 1.0, recall: 1.0, f1: 1.0, loss: 0.065) 
+ Validation(acc: 0.4172, precision: 0.4724, recall: 0.41737456110544796, f1: 0.3733791457885946, loss: 1.5401)
+
+(MixText) Epoch 6: 
+ Training(acc: 1.0, precision: 1.0, recall: 1.0, f1: 1.0, loss: 0.0635) 
+ Validation(acc: 0.4448, precision: 0.4501, recall: 0.44458602333220076, f1: 0.43640617410730775, loss: 1.2823)
+
+(MixText) Epoch 7: 
+ Training(acc: 1.0, precision: 1.0, recall: 1.0, f1: 1.0, loss: 0.058) 
+ Validation(acc: 0.4785, precision: 0.5149, recall: 0.4780835881753313, f1: 0.46051978624896184, loss: 1.4034)
+
+(MixText) Epoch 8: 
+ Training(acc: 1.0, precision: 1.0, recall: 1.0, f1: 1.0, loss: 0.0425) 
+ Validation(acc: 0.4785, precision: 0.4993, recall: 0.47819685128553635, f1: 0.4695250181691264, loss: 1.5292)
+
+(MixText) Epoch 9: 
+ Training(acc: 1.0, precision: 1.0, recall: 1.0, f1: 1.0, loss: 0.0979) 
+ Validation(acc: 0.4785, precision: 0.4965, recall: 0.47774379884471624, f1: 0.4562335253762868, loss: 1.534)
+
+(MixText) Epoch 10: 
+ Training(acc: 0.98, precision: 0.9804, recall: 0.9803921568627452, f1: 0.9797979797979798, loss: 0.1014) 
+ Validation(acc: 0.4387, precision: 0.4584, recall: 0.4378751840525541, f1: 0.40574557222805935, loss: 1.5673)
+
+(MixText) Epoch 11: 
+ Training(acc: 0.98, precision: 0.9804, recall: 0.9803921568627452, f1: 0.9797979797979798, loss: 0.0951) 
+ Validation(acc: 0.4693, precision: 0.51, recall: 0.46907917091403334, f1: 0.4525071803659908, loss: 1.6332)
+
+(MixText) Epoch 12: 
+ Training(acc: 1.0, precision: 1.0, recall: 1.0, f1: 1.0, loss: 0.0485) 
+ Validation(acc: 0.4632, precision: 0.4828, recall: 0.462736436742553, f1: 0.4451082537010798, loss: 1.5135)
+
+(MixText) Epoch 13: 
+ Training(acc: 1.0, precision: 1.0, recall: 1.0, f1: 1.0, loss: 0.0367) 
+ Validation(acc: 0.4509, precision: 0.4634, recall: 0.4505040208404123, f1: 0.4313614717400607, loss: 1.6389)
+
+(MixText) Epoch 14: 
+ Training(acc: 1.0, precision: 1.0, recall: 1.0, f1: 1.0, loss: 0.0464) 
+ Validation(acc: 0.4693, precision: 0.4852, recall: 0.46888096047117456, f1: 0.45657787908254566, loss: 1.5462)
+
+(MixText) Epoch 15: 
+ Training(acc: 1.0, precision: 1.0, recall: 1.0, f1: 1.0, loss: 0.0485) 
+ Validation(acc: 0.4509, precision: 0.4624, recall: 0.4503624419526561, f1: 0.4309321945239126, loss: 1.5874)
+
+(MixText) Epoch 16: 
+ Training(acc: 1.0, precision: 1.0, recall: 1.0, f1: 1.0, loss: 0.0417) 
+ Validation(acc: 0.4632, precision: 0.473, recall: 0.462849699852758, f1: 0.4512820228288714, loss: 1.6418)
+
+(MixText) Epoch 17: 
+ Training(acc: 1.0, precision: 1.0, recall: 1.0, f1: 1.0, loss: 0.0494) 
+ Validation(acc: 0.4724, precision: 0.4804, recall: 0.4720240117793635, f1: 0.4626448724498276, loss: 1.5129)
+
+(MixText) Epoch 18: 
+ Training(acc: 1.0, precision: 1.0, recall: 1.0, f1: 1.0, loss: 0.0493) 
+ Validation(acc: 0.4785, precision: 0.4759, recall: 0.477942009287575, f1: 0.4634406891332595, loss: 1.5821)
+
+(MixText) Epoch 19: 
+ Training(acc: 1.0, precision: 1.0, recall: 1.0, f1: 1.0, loss: 0.0271) 
+ Validation(acc: 0.4816, precision: 0.4943, recall: 0.48153811303658395, f1: 0.4751420454545454, loss: 1.7281)
+
+(MixText) Epoch 20: 
+ Training(acc: 1.0, precision: 1.0, recall: 1.0, f1: 1.0, loss: 0.0294) 
+ Validation(acc: 0.4969, precision: 0.4963, recall: 0.49646052780609357, f1: 0.48649371986507606, loss: 1.6822)
+
+-----------------------------------------------------------------
+
+
++++++++++++++++++++++++++++++++++++
