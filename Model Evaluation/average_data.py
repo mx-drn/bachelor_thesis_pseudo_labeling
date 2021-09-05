@@ -179,6 +179,65 @@ def average_data_and_calc_std(data_class):
         2: round(np.std(mixtext['average_frequency'][2]), 4)
     }
 
+    test_dict = {
+        'tradi': {
+            'avg': {
+                'acc': round(np.mean(traditional['average_acc']), 4),
+                'precision': round(np.mean(traditional['average_prec']), 4),
+                'recall': round(np.mean(traditional['average_recall']), 4),
+                'f1': round(np.mean(traditional['average_f1']), 4)
+            },
+            'std': {
+                'acc': round(np.std(traditional['average_acc']), 4),
+                'precision': round(np.std(traditional['average_prec']), 4),
+                'recall': round(np.std(traditional['average_recall']), 4),
+                'f1': round(np.std(traditional['average_f1']), 4)
+            }
+        },
+        'nssdl': {
+            'avg': {
+                'acc': round(np.mean(nssdl['average_acc']), 4),
+                'precision': round(np.mean(nssdl['average_prec']), 4),
+                'recall': round(np.mean(nssdl['average_recall']), 4),
+                'f1': round(np.mean(nssdl['average_f1']), 4)
+            },
+            'std': {
+                'acc': round(np.std(nssdl['average_acc']), 4),
+                'precision': round(np.std(nssdl['average_prec']), 4),
+                'recall': round(np.std(nssdl['average_recall']), 4),
+                'f1': round(np.std(nssdl['average_f1']), 4)
+            }
+        },
+        'nssdl_strong': {
+            'avg': {
+                'acc': round(np.mean(nssdl_strong['average_acc']), 4),
+                'precision': round(np.mean(nssdl_strong['average_prec']), 4),
+                'recall': round(np.mean(nssdl_strong['average_recall']), 4),
+                'f1': round(np.mean(nssdl_strong['average_f1']), 4)
+            },
+            'std': {
+                'acc': round(np.std(nssdl_strong['average_acc']), 4),
+                'precision': round(np.std(nssdl_strong['average_prec']), 4),
+                'recall': round(np.std(nssdl_strong['average_recall']), 4),
+                'f1': round(np.std(nssdl_strong['average_f1']), 4)
+            }
+        },
+        'mixtext': {
+            'avg': {
+                'acc': round(np.mean(mixtext['average_acc']), 4),
+                'precision': round(np.mean(mixtext['average_prec']), 4),
+                'recall': round(np.mean(mixtext['average_recall']), 4),
+                'f1': round(np.mean(mixtext['average_f1']), 4)
+            },
+            'std': {
+                'acc': round(np.std(mixtext['average_acc']), 4),
+                'precision': round(np.std(mixtext['average_prec']), 4),
+                'recall': round(np.std(mixtext['average_recall']), 4),
+                'f1': round(np.std(mixtext['average_f1']), 4)
+            }
+        }
+    }
+
     averaged_tests = [{
         'model': 'tradi',
         'acc': f"avg: {round(np.mean(traditional['average_acc']), 4)} || std: {round(np.std(traditional['average_acc']), 4)}",
@@ -252,15 +311,54 @@ def average_data_and_calc_std(data_class):
         }
     ]
 
-    return all_times
+    return all_times, test_dict
 
 
-time10 = average_data_and_calc_std(10)
-time50 = average_data_and_calc_std(50)
-time250 = average_data_and_calc_std(250)
-time500 = average_data_and_calc_std(500)
-time1300 = average_data_and_calc_std(1300)
+time10, test_dict10 = average_data_and_calc_std(10)
+time50, test_dict50 = average_data_and_calc_std(50)
+time250, test_dict250 = average_data_and_calc_std(250)
+time500, test_dict500 = average_data_and_calc_std(500)
+time1300, test_dict1300 = average_data_and_calc_std(1300)
 
-all_times = time10 + time50 + time250 + time500 + time1300
-all_times = pd.DataFrame(all_times)
-all_times.to_excel("./all_training_times.xlsx")
+overall_average = []
+
+for kind in ['tradi', 'nssdl', 'nssdl_strong', 'mixtext']:
+    avg_acc = 0
+    avg_prec = 0
+    avg_recall = 0
+    avg_f1 = 0
+
+    std_acc = 0
+    std_prec = 0
+    std_recall = 0
+    std_f1 = 0
+
+    for dict in [test_dict10, test_dict50, test_dict250, test_dict500, test_dict1300]:
+        avg_acc += dict[kind]['avg']['acc']
+        avg_prec += dict[kind]['avg']['precision']
+        avg_recall += dict[kind]['avg']['recall']
+        avg_f1 += dict[kind]['avg']['f1']
+
+        std_acc += dict[kind]['std']['acc']
+        std_prec += dict[kind]['std']['precision']
+        std_recall += dict[kind]['std']['recall']
+        std_f1 += dict[kind]['std']['f1']
+
+    overall_average.append({
+            'model': kind,
+            'acc': f"avg: {round(avg_acc/5, 4)} || std: {round(std_acc/5, 4)}",
+            'precision': f"avg: {round(avg_prec/5, 4)} || std: {round(std_prec/5, 4)}",
+            'recall': f"avg: {round(avg_recall/5, 4)} || std: {round(std_recall/5, 4)}",
+            'f1': f"avg: {round(avg_f1/5, 4)} || std: {round(std_f1/5, 4)}"
+        })
+
+overall_average = pd.DataFrame(overall_average)
+
+overall_average.to_excel(f"./averaged_test_data_over_all_classes.xlsx")
+
+print(f"All Testdata was averaged and saved successfully!")
+
+#all_times = time10 + time50 + time250 + time500 + time1300
+#all_times = pd.DataFrame(all_times)
+#all_times.to_excel("./all_training_times.xlsx")
+
